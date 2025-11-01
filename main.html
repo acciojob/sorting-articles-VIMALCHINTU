@@ -53,7 +53,7 @@
 <body>
   <div class="container">
     <h1>Alphabetical Article Sorter</h1>
-    <ul id="band"></ul>
+    <ul id="bands"></ul> <!-- ✅ changed from 'band' to 'bands' -->
   </div>
 
   <script>
@@ -70,7 +70,7 @@
 
     const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
 
-    document.getElementById('band').innerHTML = 
+    document.getElementById('bands').innerHTML = 
       sortedBands.map(band => `<li>${band}</li>`).join('');
   </script>
 </body>
